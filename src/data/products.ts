@@ -46,7 +46,7 @@ export const products: Product[] = [
     name: 'Adjustable Dog Collar',
     price: 29.99,
     description: 'Premium leather collar with durable hardware. Available in multiple sizes.',
-    image: 'https://images.unsplash.com/photo-1589863479160-fbb815b2b68a',
+    image: 'https://www.mundomiauauau.com.br/cdn/shop/products/S4473c29c98ab41d99f17ab99b4d15df3r_800x.jpg?v=1691012258',
     category: 'acessórios',
   },
   {

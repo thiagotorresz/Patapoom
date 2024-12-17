@@ -54,11 +54,9 @@ function App() {
 
           <section id="about" className="mb-16 bg-white rounded-lg shadow-lg p-8">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Sobre PATAPOOM PET</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">SOBRE PATAPOOM PET</h2>
               <p className="text-gray-600 mb-8">
-                Na PATAPOOM PET, acreditamos que todo animal merece o melhor. Nossa seleção cuidadosamente selecionada
-                de animais de estimação e acessórios premium garantem que você e seu amigo peludo não recebam nada
-                mas os produtos e cuidados da mais alta qualidade.
+                Na PataPoom Pet, o bem-estar animal é nossa maior prioridade. Com mais de 4 anos de experiência, criamos um ambiente acolhedor e seguro para nossos filhotes, onde eles recebem todo o cuidado e atenção que precisam. Nossa equipe de profissionais qualificados garante que cada filhote seja saudável e feliz antes de encontrar sua nova família. Oferecemos total transparência em todas as etapas, desde a criação até a entrega, e garantimos suporte veterinário personalizado para você e seu novo companheiro. Escolha PataPoom Pet e adquira um amigo para a vida toda.
               </p>
               <img
                 src="https://images.unsplash.com/photo-1544568100-847a948585b9"
@@ -112,7 +110,7 @@ function App() {
                 <h3 className="text-lg font-semibold mb-4">Links rápidos</h3>
                 <ul className="space-y-2">
                   <li><a href="#" className="text-gray-400 hover:text-white">Home</a></li>
-                  <li><a href="#products" className="text-gray-400 hover:text-white">Produtos</a></li>
+                  <li><a href="#products" className="text-gray-400 hover:text-white">Pets e Acessórios</a></li>
                   <li><a href="#about" className="text-gray-400 hover:text-white">Sobre</a></li>
                   <li><a href="#contact" className="text-gray-400 hover:text-white">Contato</a></li>
                 </ul>

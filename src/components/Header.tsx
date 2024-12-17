@@ -19,7 +19,7 @@ export function Header() {
 
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#" className="text-gray-700 hover:text-purple-600 transition-colors">Início</a>
-            <a href="#products" className="text-gray-700 hover:text-purple-600 transition-colors">Produtos</a>
+            <a href="#products" className="text-gray-700 hover:text-purple-600 transition-colors">Pets e Acessórios</a>
             <a href="#about" className="text-gray-700 hover:text-purple-600 transition-colors">Sobre</a>
             <a href="#contact" className="text-gray-700 hover:text-purple-600 transition-colors">Contato</a>
           </nav>
@@ -41,7 +41,7 @@ export function Header() {
           </div>
           <nav className="px-4 py-2 space-y-2">
             <a href="#" className="block py-2 text-gray-700 hover:text-purple-600">Início</a>
-            <a href="#products" className="block py-2 text-gray-700 hover:text-purple-600">Produtos</a>
+            <a href="#products" className="block py-2 text-gray-700 hover:text-purple-600">Pets e Acessórios</a>
             <a href="#about" className="block py-2 text-gray-700 hover:text-purple-600">Sobre</a>
             <a href="#contact" className="block py-2 text-gray-700 hover:text-purple-600">Contato</a>
           </nav>

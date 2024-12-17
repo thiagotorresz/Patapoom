@@ -12,8 +12,7 @@ export function Hero() {
                 <span className="block text-green-600">PATAPOOM PET</span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Encontre o seu companheiro peludo perfeito e tudo o que ele precisa para viver da melhor maneira possível.
-                Animais de estimação premium, acessórios de qualidade e conselhos de cuidados especializados.
+                Descubra o companheiro perfeito para a sua família. Uma seleção especial de cães, com pedigree e a garantia de um novo melhor amigo para toda a vida. Além disso, encontre tudo o que seu pet precisa para viver com muito estilo e conforto.
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
@@ -21,7 +20,7 @@ export function Hero() {
                     href="#products"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purple-600 hover:bg-green-700 md:py-4 md:text-lg md:px-10"
                   >
-                    Raças e Produtos
+                    Pets e Acessórios
                     <ArrowRight className="ml-2" size={20} />
                   </a>
                 </div>
