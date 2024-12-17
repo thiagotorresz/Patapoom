@@ -10,7 +10,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <img src="img/LOGO-PATAPOOM.png" alt="Logo Patapoom" width="187vw"  style={{ marginTop: '-30px' }}/>
+            <img src="/Patapoom/img/LOGO-PATAPOOM.png" alt="Logo Patapoom" width="187vw"  style={{ marginTop: '-30px' }}/>
           </div>
 
           <div className="hidden md:flex flex-1 max-w-xl mx-8">
