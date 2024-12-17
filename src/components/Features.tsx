@@ -26,11 +26,20 @@ export function Features() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm"
+              className="relative flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm transition-all duration-300 group hover:shadow-[0_0_20px_0_rgba(0,255,117,0.5)]"
             >
-              {feature.icon}
-              <h3 className="mt-4 text-lg font-semibold text-gray-900">{feature.title}</h3>
-              <p className="mt-2 text-sm text-gray-500">{feature.description}</p>
+              {/* Overlay com Gradiente apenas no Hover */}
+              <div className="absolute inset-0 rounded-lg bg-gradient-to-tr from-[#00ff70] to-[#3700ff] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+
+              {/* Conteúdo */}
+              <div className="relative z-10 flex flex-col items-center justify-center">
+                <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gray-100">
+                  {feature.icon}
+                </div>
+                <h3 className="mt-4 text-lg font-semibold text-gray-900">{feature.title}</h3>
+                <p className="mt-2 text-sm text-gray-500 font-semibold">{feature.description}</p>
+              </div>
+
             </div>
           ))}
         </div>

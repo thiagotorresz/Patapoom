@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {Menu, X, ShoppingCart } from 'lucide-react';
+import {Menu, X } from 'lucide-react';
 import { SearchBar } from './SearchBar';
 
 export function Header() {
@@ -21,13 +21,7 @@ export function Header() {
             <a href="#" className="text-gray-700 hover:text-purple-600 transition-colors">Início</a>
             <a href="#products" className="text-gray-700 hover:text-purple-600 transition-colors">Produtos</a>
             <a href="#about" className="text-gray-700 hover:text-purple-600 transition-colors">Sobre</a>
-            <a href="#contact" className="text-gray-700 hover:text-purple-600 transition-colors">Contatos</a>
-            <button className="relative">
-              <ShoppingCart className="text-gray-700 hover:text-purple-600" />
-              <span className="absolute -top-2 -right-2 bg-purple-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-                0
-              </span>
-            </button>
+            <a href="#contact" className="text-gray-700 hover:text-purple-600 transition-colors">Contato</a>
           </nav>
 
           <button 
@@ -49,7 +43,7 @@ export function Header() {
             <a href="#" className="block py-2 text-gray-700 hover:text-purple-600">Início</a>
             <a href="#products" className="block py-2 text-gray-700 hover:text-purple-600">Produtos</a>
             <a href="#about" className="block py-2 text-gray-700 hover:text-purple-600">Sobre</a>
-            <a href="#contact" className="block py-2 text-gray-700 hover:text-purple-600">Contatos</a>
+            <a href="#contact" className="block py-2 text-gray-700 hover:text-purple-600">Contato</a>
           </nav>
         </div>
       )}
