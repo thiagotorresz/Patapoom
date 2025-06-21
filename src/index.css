@@ -2,55 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-.card {
-    background-color: rgb(238, 238, 238);
-    display: flex;
-    padding: 25px 25px;
-    gap: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+@layer utilities {
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
   }
   
-  .socialContainer {
-    width: 52px;
-    height: 52px;
-    background-color: rgb(44, 44, 44);
-    display: flex;
-    justify-content: center;
+  .animate-float-delayed {
+    animation: float 3s ease-in-out infinite 1.5s;
   }
-  
-  /* Instagram */
-  .containerOne:hover {
-    background-color: #d62976;
-    transition-duration: .3s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
   }
-  
-  /* WhatsApp */
-  .containerFour:hover {
-    background-color: #128C7E;
-    transition-duration: .3s;
+  50% {
+    transform: translateY(-10px);
   }
-    
-  .socialSvg {
-    width: 30px;
-  }
-  
-  .socialSvg path {
-    fill: rgb(255, 255, 255);
-  }
-  
-  .socialContainer:hover .socialSvg {
-    animation: slide-in-top 0.3s both;
-  }
-  
-  @keyframes slide-in-top {
-    0% {
-      transform: translateY(-50px);
-      opacity: 0;
-    }
-  
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #9333ea, #ec4899);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #7c3aed, #db2777);
+}

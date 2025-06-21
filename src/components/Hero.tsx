@@ -1,41 +1,82 @@
-import { ArrowRight } from 'lucide-react';
+import React from 'react';
+import { Heart, Star, ArrowRight } from 'lucide-react';
 
-export function Hero() {
+const Hero = () => {
   return (
-    <div className="relative bg-gray-50 overflow-hidden">
-      <div className="max-w-7xl mx-auto">
-        <div className="relative z-10 pb-8 bg-gray-50 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-          <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-            <div className="sm:text-center lg:text-left">
-              <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                <span className="block">Bem vindo </span>
-                <span className="block text-green-600">PATAPOOM PET</span>
-              </h1>
-              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Descubra o companheiro perfeito para a sua família. Uma seleção especial de cães, com pedigree e a garantia de um novo melhor amigo para toda a vida. Além disso, encontre tudo o que seu pet precisa para viver com muito estilo e conforto.
-              </p>
-              <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                <div className="rounded-md shadow">
-                  <a
-                    href="#products"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purple-600 hover:bg-green-700 md:py-4 md:text-lg md:px-10"
-                  >
-                    Pets e Acessórios
-                    <ArrowRight className="ml-2" size={20} />
-                  </a>
+    <>
+      {/* Banner Full-Screen com apenas a logo */}
+      <section 
+        className="relative h-screen bg-cover bg-center bg-no-repeat overflow-hidden"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=1920')`
+        }}
+      >
+        {/* Logo centralizada */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <img 
+            src="./logocao.png" 
+            alt="Puppy Love Logo" 
+            className="h-48 w-auto animate-puls bg-[#4CCAB2] rounded-full"
+          />
+        </div>
+      </section>
+
+      {/* Conteúdo após o banner */}
+      <section className="py-20 bg-gradient-to-br from-orange-100 via-pink-50 to-purple-100">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center space-y-8">
+              <div className="space-y-6">
+                <div className="flex items-center justify-center space-x-2 text-purple-600">
+                  <Star className="fill-current" size={24} />
+                  <span className="text-lg font-semibold uppercase tracking-wider">Filhotes de Raça Premium</span>
+                  <Star className="fill-current" size={24} />
+                </div>
+                
+                <h1 className="text-5xl lg:text-7xl font-bold text-gray-800 leading-tight">
+                  Você já imaginou como seria a sua vida com um 
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600"> novo amigo fiel</span> ao seu lado?
+                </h1>
+                
+                <p className="text-2xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
+                  Desperte o amor incondicional que só um filhote pode oferecer. 
+                  Nossos cãezinhos de raça são criados com carinho, saúde garantida 
+                  e prontos para transformar sua casa em um lar cheio de alegria.
+                </p>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                <button className="group bg-gradient-to-r from-purple-600 to-pink-600 text-white px-10 py-5 rounded-full text-xl font-bold hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-xl flex items-center justify-center">
+                  <Heart className="mr-3 group-hover:animate-pulse" size={24} />
+                  Encontrar Meu Filhote
+                  <ArrowRight className="ml-3 group-hover:translate-x-1 transition-transform" size={24} />
+                </button>
+                
+                <button className="border-2 border-purple-600 text-purple-600 px-10 py-5 rounded-full text-xl font-bold hover:bg-purple-600 hover:text-white transition-all duration-300">
+                  Ver Disponíveis
+                </button>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12 max-w-4xl mx-auto">
+                <div className="bg-white p-8 rounded-3xl shadow-lg text-center transform hover:scale-105 transition-all duration-300">
+                  <div className="text-4xl font-bold text-purple-600 mb-2">500+</div>
+                  <div className="text-gray-600 font-medium">Famílias Felizes</div>
+                </div>
+                <div className="bg-white p-8 rounded-3xl shadow-lg text-center transform hover:scale-105 transition-all duration-300">
+                  <div className="text-4xl font-bold text-purple-600 mb-2">15+</div>
+                  <div className="text-gray-600 font-medium">Raças Disponíveis</div>
+                </div>
+                <div className="bg-white p-8 rounded-3xl shadow-lg text-center transform hover:scale-105 transition-all duration-300">
+                  <div className="text-4xl font-bold text-purple-600 mb-2">100%</div>
+                  <div className="text-gray-600 font-medium">Saúde Garantida</div>
                 </div>
               </div>
             </div>
-          </main>
+          </div>
         </div>
-      </div>
-      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <img
-          className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-          src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-          alt="Happy dogs"
-        />
-      </div>
-    </div>
+      </section>
+    </>
   );
-}
+};
+
+export default Hero;
